@@ -2,25 +2,25 @@ Attribute VB_Name = "ForUserForm"
 Sub CallUserForm()
 
     With ICPform.WorkSchedule_value
-        .AddItem "полный день"
-        .AddItem "сменный график"
+        .AddItem "РїРѕР»РЅС‹Р№ РґРµРЅСЊ"
+        .AddItem "СЃРјРµРЅРЅС‹Р№ РіСЂР°С„РёРє"
     End With
     
     With ICPform.TypeEmployment_value
-        .AddItem "гибрид"
-        .AddItem "удаленка"
-        .AddItem "полный офис"
+        .AddItem "РіРёР±СЂРёРґ"
+        .AddItem "СѓРґР°Р»РµРЅРєР°"
+        .AddItem "РїРѕР»РЅС‹Р№ РѕС„РёСЃ"
     End With
     
     With ICPform.TypeContract_value
-        .AddItem "срочный"
-        .AddItem "бессрочный"
+        .AddItem "СЃСЂРѕС‡РЅС‹Р№"
+        .AddItem "Р±РµСЃСЃСЂРѕС‡РЅС‹Р№"
     End With
     
     With ICPform.ProbPeriod_value
-        .AddItem "1 месяц"
-        .AddItem "2 месяца"
-        .AddItem "3 месяца"
+        .AddItem "1 РјРµСЃСЏС†"
+        .AddItem "2 РјРµСЃСЏС†Р°"
+        .AddItem "3 РјРµСЃСЏС†Р°"
     End With
     
     ICPform.Show

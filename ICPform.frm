@@ -1,6 +1,6 @@
 VERSION 5.00
 Begin {C62A69F0-16DC-11CE-9E98-00AA00574A4F} ICPform 
-   Caption         =   "Заполнение индивидуального компенсационного пакета (ИКП)"
+   Caption         =   "Р—Р°РїРѕР»РЅРµРЅРёРµ РёРЅРґРёРІРёРґСѓР°Р»СЊРЅРѕРіРѕ РєРѕРјРїРµРЅСЃР°С†РёРѕРЅРЅРѕРіРѕ РїР°РєРµС‚Р° (РРљРџ)"
    ClientHeight    =   5856
    ClientLeft      =   105
    ClientTop       =   450
@@ -14,7 +14,7 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Private Sub Cancel_Click()
-'Обработка кнопки "Отмена"
+'РћР±СЂР°Р±РѕС‚РєР° РєРЅРѕРїРєРё "РћС‚РјРµРЅР°"
     ICPform.Hide
     TypeContract_value.Clear
     ProbPeriod_value.Clear
@@ -23,7 +23,7 @@ Private Sub Cancel_Click()
 End Sub
 
 Private Sub Clear_Click()
-' Обработка кнопки "Очистить поля"
+'РћР±СЂР°Р±РѕС‚РєР° РєРЅРѕРїРєРё "РћС‡РёСЃС‚РёС‚СЊ РїРѕР»СЏ"
     FullName_value.Text = ""
     Company_value.Text = ""
     Position_value.Text = ""
@@ -41,8 +41,8 @@ Private Sub Clear_Click()
 End Sub
 
 Private Sub Fill_Click()
-' Обработка кнопки "Заполнить"
-    With ICP.ListObjects("ИКП").ListColumns(2)
+'РћР±СЂР°Р±РѕС‚РєР° РєРЅРѕРїРєРё "Р—Р°РїРѕР»РЅРёС‚СЊ"
+    With ICP.ListObjects("РРљРџ").ListColumns(2)
         .DataBodyRange(1).Value = FullName_value.Text
         .DataBodyRange(2).Value = Company_value.Text
         .DataBodyRange(3).Value = Position_value.Text
